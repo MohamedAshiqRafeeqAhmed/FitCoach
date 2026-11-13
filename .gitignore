@@ -1,0 +1,48 @@
+# Environments
+venv/
+.venv/
+*env/
+__pycache__/
+*.pyc
+
+# Model artifacts — regenerate with `python -m formcoach.train`
+models/
+*.pkl
+*.task
+*.pt
+
+# Augmented data — regenerate with `python -m formcoach.augment`
+*_aug.csv
+*_pollated.csv
+
+# External research data; fetch locally and follow source dataset terms
+data/rehabpile/
+
+# Benchmark dataset — download from Kaggle (see benchmark/README.md)
+benchmark/csv_data/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local configuration and editor state
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Python tooling and logs
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# Build and package output
+build/
+dist/
+node_modules/
+
+# Local review and presentation build output
+.codex-review1-build/
+review1-output/
